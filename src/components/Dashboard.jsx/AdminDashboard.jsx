@@ -4,10 +4,10 @@ import CreateTask from '../Others.jsx/CreateTask'
 import AllTasks from '../Others.jsx/AllTasks'
 
 
-const AdminDashboard = ({changeUser}) => {
+const AdminDashboard = ({changeUser, data}) => {
   return (
     <div className='h-screen w-full p-7 '>
-       <Header changeUser = {changeUser}/>
+       <Header changeUser = {changeUser} data={data} />
        <CreateTask/>
        <AllTasks/>
     </div>
